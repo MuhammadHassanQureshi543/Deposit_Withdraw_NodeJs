@@ -17,10 +17,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.options('*', cors());
 app.use(userRouter)
 
-let DB = `mongodb+srv://scam:<password>@cluster0.hpiqu3n.mongodb.net/scam?retryWrites=true&w=majority`;
-const password = 'ZjHarTeHSFSUr8dl';
-// let DB = `mongodb+srv://socialmedia:<password>@cluster0.dz5c9ue.mongodb.net/socialmedia?retryWrites=true&w=majority`
-// password = 'KingBaglool'
+let DB = `Your DB Link`;
+const password = 'Your Password';
 
 DB = DB.replace('<password>', password);
 
